@@ -7,4 +7,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class UserController {
 
+
+    @GetMapping("/")
+    public String home() {
+        return "home";
+    }
 }
